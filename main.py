@@ -51,6 +51,9 @@ if __name__ == '__main__':
                 b = float(cmdlist[3])
             mat.addCol(i,j,b)
             print(mat)
+        elif cmdlist[0].lower() == "undo":
+            mat.undo()
+            print(mat)
         elif cmdlist[0].lower() == "getlatex":
             print(mat.getLatex())
         elif cmdlist[0].lower() == "getequiv":
