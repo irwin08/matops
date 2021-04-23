@@ -90,7 +90,7 @@ class OperationMatrix:
         if len(self.states) > 1:
             self.states.pop()
             self.elementary.pop()
-            self.matrix = states[-1].copy()
+            self.matrix = self.states[-1].copy()
 
     def getLatex(self):
         data = []
